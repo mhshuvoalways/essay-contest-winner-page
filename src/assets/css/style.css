@@ -1,0 +1,246 @@
+:root {
+  --title-font-family: "Dosis", sans-serif;
+  --primary-color: #4cbfff;
+  --text-primary-color: #0f4e8c;
+  --section-title-color: #da2128;
+  --text-color: #efefef;
+  --second-text-color: #1f59c0;
+  --faqs-color: #fe676e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+/* Readymade met css start*/
+.section {
+  margin-top: 150px;
+}
+
+.section__title {
+  color: var(--section-title-color);
+  text-align: center;
+  font-family: var(--title-font-family);
+  font-weight: 900;
+}
+.section__title__details {
+  text-align: center;
+  color: var(--second-text-color);
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.section__title__img {
+  margin: 0 auto;
+  display: block;
+}
+/* Readymade met css end*/
+
+/* Nav start */
+.our-nav {
+  background-color: var(--primary-color);
+  padding: 10px 0;
+}
+
+.nav__img-bottom {
+  margin-top: -10px;
+}
+.our-nav__img {
+  width: 50px;
+}
+
+.top-banner__button {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  background-color: var(--section-title-color);
+  padding: 10px 30px;
+  border-radius: 3px;
+  color: var(--text-color);
+  transition: all 0.7s;
+}
+.top-banner__button:hover {
+  color: var(--text-color);
+  background-color: #0f4e8c;
+}
+.nav__item-color {
+  color: var(--text-color) !important;
+  font-weight: bold;
+}
+/* Nav end */
+
+/* Banner start */
+.top-banner {
+  background-image: url(../images/others/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: -25px 0;
+}
+
+.top-banner__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.top-banner__title {
+  color: var(--text-color);
+  padding-top: 200px;
+  text-align: center;
+}
+/* Banner end */
+
+/* About start */
+.about__details {
+  text-align: justify;
+}
+/* About end */
+
+/* Category start */
+.category__bg {
+  background-image: url("../images/others/category-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+.category__card {
+  text-align: center;
+  margin: 0 auto;
+}
+.category__card-item {
+  margin: 0 auto;
+  width: 400px;
+  margin-top: 70px;
+}
+/* Category end */
+
+/* Important dates start */
+.important-date__details {
+  position: relative;
+}
+.important-date__details__img {
+  display: block;
+  margin: 0 auto;
+}
+.important-date__details__contant {
+  position: absolute;
+  top: 55px;
+  left: 380px;
+}
+/* Important dates end */
+
+/* Award start */
+.award__card {
+  text-align: center;
+  display: block !important;
+  margin: 0 auto;
+  width: 350px !important;
+}
+
+.slick-arrow.slick-prev {
+  background-color: var(--section-title-color);
+  width: 40px;
+  height: 40px;
+}
+.slick-arrow.slick-next {
+  background-color: var(--section-title-color);
+  width: 40px;
+  height: 40px;
+}
+.award__card-body {
+  position: relative;
+}
+.award__card-body__star {
+  left: 50%;
+  position: absolute;
+  top: -50px;
+  transform: translateX(-50%);
+}
+.award__card-body__star__img {
+  animation: mymove infinite 3s linear;
+}
+.award__card-body__star span {
+  font-size: 24px;
+  font-weight: 700;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes mymove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card-title {
+  margin-top: 40px;
+}
+/* Award end */
+
+/* Gallery start */
+.gallery__pic {
+  width: 100%;
+  margin-top: 15px;
+}
+/* Gallery end */
+
+/* Magazine start */
+.magazines {
+  background-image: url("../images/magazines/magazine-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.magazines__details {
+  display: block;
+  margin: 120px auto;
+}
+.magazine__img {
+  width: 180px;
+  height: 260px;
+}
+.magazines .slick-arrow.slick-prev {
+  display: none !important;
+}
+.magazines .slick-arrow.slick-next {
+  display: none !important;
+}
+/* Magazine end */
+
+/* Guidlines start */
+.guidelines {
+  display: block;
+  margin: 0 auto;
+}
+/* Guidlines end */
+
+/* FAQs start */
+.top-banner__button--faqs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 6px 6px 10px 10px;
+}
+/* FAQs end */
