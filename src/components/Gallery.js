@@ -9,43 +9,56 @@ import Img6 from '../assets/images/gallery/7b.jpg';
 import Img7 from '../assets/images/gallery/8b.jpg';
 import Img8 from '../assets/images/gallery/9b.jpg';
 import TitleBottom from '../assets/images/others/title-bottom.png';
+import Slider from "react-slick";
 
 const Gallery = () => {
+    var settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000
+    };
+
     return (
-        <div className="section container">
+        <div className="section">
             <h2 className="section__title">Photo Gallery</h2>
             <img className="section__title__img" src={TitleBottom} alt="" />
-            <p className="section__title__details">10th NATIONAL MEGA FINAL AT KUMARAGURU CAMPUS, COIMBATORE ON 28th & 29th DEC. 2019
+            <p className="section__title__details">Identifying Wizards and honoring them the right way
             </p>
-            <div className="row gallery__all-pic">
-                <div className="col-md-4 col-sm-12" data-aos="fade-up">
-                    <img src={Img9} alt="" className="gallery__pic" />
+            <div className="gallery">
+                <div className="row">
+                    <div className="magazines__details container">
+                        <Slider {...settings}>
+                            <div className="card award__card" data-aos="fade-up">
+                                <img className="magazine__img" src={Img1} alt="" />
+                            </div>
+                            <div className="card award__card" data-aos="fade-up">
+                                <img className="magazine__img" src={Img9} alt="" />
+                            </div><div className="card award__card" data-aos="fade-up">
+                                <img className="magazine__img" src={Img3} alt="" />
+                            </div><div className="card award__card" data-aos="fade-up">
+                                <img className="magazine__img" src={Img2} alt="" />
+                            </div>
+                            <div className="card award__card" data-aos="fade-up">
+                                <img className="magazine__img" src={Img4} alt="" />
+                            </div>
+                            <div className="card award__card" data-aos="fade-up">
+                                <img className="magazine__img" src={Img5} alt="" />
+                            </div>
+                            <div className="card award__card" data-aos="fade-up">
+                                <img className="magazine__img" src={Img6} alt="" />
+                            </div>
+                            <div className="card award__card" data-aos="fade-up">
+                                <img className="magazine__img" src={Img7} alt="" />
+                            </div>
+                            <div className="card award__card" data-aos="fade-up">
+                                <img className="magazine__img" src={Img8} alt="" />
+                            </div>
+                        </Slider>
+                    </div>
                 </div>
-                <div className="col-md-4 col-sm-12" data-aos="fade-up">
-                    <img src={Img1} alt="" className="gallery__pic" />
-                </div>
-                <div className="col-md-4 col-sm-12" data-aos="fade-up">
-                    <img src={Img2} alt="" className="gallery__pic" />
-                </div>
-                <div className="col-md-4 col-sm-12" data-aos="fade-up">
-                    <img src={Img3} alt="" className="gallery__pic" />
-                </div>
-                <div className="col-md-4 col-sm-12" data-aos="fade-up">
-                    <img src={Img4} alt="" className="gallery__pic" />
-                </div>
-                <div className="col-md-4 col-sm-12" data-aos="fade-up">
-                    <img src={Img5} alt="" className="gallery__pic" />
-                </div>
-                <div className="col-md-4 col-sm-12" data-aos="fade-up">
-                    <img src={Img6} alt="" className="gallery__pic" />
-                </div>
-                <div className="col-md-4 col-sm-12" data-aos="fade-up">
-                    <img src={Img7} alt="" className="gallery__pic" />
-                </div>
-                <div className="col-md-4 col-sm-12" data-aos="fade-up">
-                    <img src={Img8} alt="" className="gallery__pic" />
-                </div>
-
             </div>
         </div>
     )

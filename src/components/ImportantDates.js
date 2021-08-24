@@ -1,7 +1,6 @@
 import React from 'react';
 import TitleBottom from '../assets/images/others/title-bottom.png';
 import ImportantDatesImg from '../assets/images/others/important-date.jpg';
-import Button from '@material-ui/core/Button';
 
 const ImportantDates = () => {
     return (
@@ -16,9 +15,9 @@ const ImportantDates = () => {
                 <div className="important-date__details__contant">
                     <h3>Topic of The Month</h3>
                     <p>Essay Topic: One Sportsman Who Created History</p>
-                    <Button variant="outlined" color="primary">
-                        Click for more details
-                    </Button>
+                    <button className="top-banner__button top-banner__button rainbow rainbow-1"  data-aos="fade-up">
+                        Click For More Details
+                    </button>
                 </div>
             </div>
         </div>

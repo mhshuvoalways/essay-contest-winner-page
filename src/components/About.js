@@ -1,5 +1,4 @@
 import TitleBottom from '../assets/images/others/title-bottom.png';
-import Button from '@material-ui/core/Button';
 
 const About = () => {
     return (
@@ -27,7 +26,7 @@ const About = () => {
 
                     Bonus: Every participant receives a “WORD BANK” preparatory booklet , prepared by a panel of English teachers and academicians. The words are graded according to their age and class.</p>
             </div>
-            <Button variant="contained" color="primary" data-aos="fade-up" className="top-banner__button--about">Check Result</Button>
+            <butoon data-aos="fade-up" className="top-banner__button top-banner__button--about rainbow rainbow-1">Check Result</butoon>
         </div>
     )
 }

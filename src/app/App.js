@@ -1,17 +1,17 @@
+import AOS from 'aos';
 import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
-import Navigation from '../components/Navigation'
-import Banner from '../components/TopBanner'
-import About from '../components/About'
-import Category from '../components/Category'
-import ImportantDates from '../components/ImportantDates'
-import Awards from '../components/Awards'
-import Gallery from '../components/Gallery'
-import Magazine from '../components/Magazine'
-import Guideline from '../components/Guideline'
-import FAQs from '../components/FAQs'
-import RulesRegulation from '../components/Rules&Regulation'
-import AOS from 'aos'
+import About from '../components/About';
+import Awards from '../components/Awards';
+import Category from '../components/Category';
+import FAQs from '../components/FAQs';
+import Gallery from '../components/Gallery';
+import Guideline from '../components/Guideline';
+import ImportantDates from '../components/ImportantDates';
+import Magazine from '../components/Magazine';
+import Navigation from '../components/Navigation';
+import RulesRegulation from '../components/Rules&Regulation';
+import Banner from '../components/TopBanner';
 
 function App() {
   useEffect(() => {
@@ -42,7 +42,7 @@ function App() {
         <Gallery />
         <Magazine />
         <Guideline />
-        <FAQs/>
+        <FAQs />
         <RulesRegulation />
       </div>
     </div>

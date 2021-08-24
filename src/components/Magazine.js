@@ -22,26 +22,26 @@ const Magazines = () => {
         <div className="section">
             <h2 className="section__title">Our Magazines</h2>
             <img className="section__title__img" src={TitleBottom} alt="" />
-            <p className="section__title__details">Identifying Wizards and honoring them the right way
+            <p className="section__title__details">Click into magazines to read for free
             </p>
             <div className="magazines">
                 <div className="row">
                     <div className="magazines__details container">
                         <Slider {...settings}>
-                            <div className="card award__card" data-aos="fade-right">
+                            <div className="card award__card" data-aos="fade-up">
                                 <img className="magazine__img" src={M2} alt="" />
                             </div>
-                            <div className="card award__card" data-aos="fade-right">
+                            <div className="card award__card" data-aos="fade-up">
                                 <img className="magazine__img" src={M3} alt="" />
-                            </div><div className="card award__card" data-aos="fade-right">
+                            </div><div className="card award__card" data-aos="fade-up">
                                 <img className="magazine__img" src={M4} alt="" />
-                            </div><div className="card award__card" data-aos="fade-right">
+                            </div><div className="card award__card" data-aos="fade-up">
                                 <img className="magazine__img" src={M10} alt="" />
                             </div>
-                            <div className="card award__card" data-aos="fade-right">
+                            <div className="card award__card" data-aos="fade-up">
                                 <img className="magazine__img" src={M11} alt="" />
                             </div>
-                            <div className="card award__card" data-aos="fade-right">
+                            <div className="card award__card" data-aos="fade-up">
                                 <img className="magazine__img" src={M13} alt="" />
                             </div>
                         </Slider>

@@ -1,5 +1,14 @@
-@media only screen and (max-width: 768px) {
-    .our-nav{
-        min-width: 678px;
-    }
+@media (max-width: 767px) {
+  .important-date__details__contant {
+    top: -25%;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 12px;
+  }
+  .important-date__details__contant {
+    top: -35%;
+  }
 }
