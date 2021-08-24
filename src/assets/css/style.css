@@ -19,10 +19,10 @@ body {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 /* Readymade met css start*/
@@ -45,13 +45,15 @@ a:hover {
 .section__title__img {
   margin: 0 auto;
   display: block;
+  width: 200px;
 }
 /* Readymade met css end*/
 
 /* Nav start */
 .our-nav {
-  background-color: var(--primary-color);
+  background-color: var(--section-title-color);
   padding: 10px 0;
+  border-bottom: 3px solid var(--text-color);
 }
 
 .nav__img-bottom {
@@ -62,22 +64,21 @@ a:hover {
 }
 
 .top-banner__button {
-  margin: 0 auto;
-  display: block;
-  border: none;
-  background-color: var(--section-title-color);
-  padding: 10px 30px;
-  border-radius: 3px;
-  color: var(--text-color);
-  transition: all 0.7s;
+  margin: 0 auto !important;
+  display: block !important;
 }
-.top-banner__button:hover {
-  color: var(--text-color);
-  background-color: #0f4e8c;
-}
+
 .nav__item-color {
   color: var(--text-color) !important;
   font-weight: bold;
+}
+
+.collapse__show {
+  display: block !important;
+}
+
+.collapse__hide {
+  display: none !important;
 }
 /* Nav end */
 
@@ -86,7 +87,7 @@ a:hover {
   background-image: url(../images/others/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 110vh;
   margin: -25px 0;
 }
 
@@ -102,8 +103,11 @@ a:hover {
 
 .top-banner__title {
   color: var(--text-color);
-  padding-top: 200px;
+  padding-top: 300px;
   text-align: center;
+}
+.top-banner__button--about {
+  width: 100%;
 }
 /* Banner end */
 
@@ -118,16 +122,20 @@ a:hover {
   background-image: url("../images/others/category-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: auto;
 }
 .category__card {
   text-align: center;
   margin: 0 auto;
 }
 .category__card-item {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 400px;
-  margin-top: 70px;
+  cursor: pointer;
+}
+.category__card__img {
+  width: 70%;
+  height: 330px;
 }
 /* Category end */
 
@@ -138,11 +146,15 @@ a:hover {
 .important-date__details__img {
   display: block;
   margin: 0 auto;
+  width: 60%;
 }
 .important-date__details__contant {
   position: absolute;
   top: 55px;
   left: 380px;
+  text-align: center;
+  margin-top: 85px;
+  color: #E47340;
 }
 /* Important dates end */
 
@@ -150,8 +162,8 @@ a:hover {
 .award__card {
   text-align: center;
   display: block !important;
-  margin: 0 auto;
-  width: 350px !important;
+  margin: 15px auto;
+  width: 260px !important;
 }
 
 .slick-arrow.slick-prev {

@@ -1,5 +1,7 @@
 import React from 'react';
 import TitleBottom from '../assets/images/others/title-bottom.png';
+import Junior from '../assets/images/others/junior.jpg';
+import Senior from '../assets/images/others/senior.jpg';
 
 const Category = () => {
   return (
@@ -9,20 +11,16 @@ const Category = () => {
       <p className="section__title__details">Some words about this category</p>
       <div className="category__bg">
         <div className="container row category__card">
-          <div className="card col-6 category__card-item" data-aos="fade-right">
-            <img className="card-img-top" src="" alt="" />
+          <div className="card col-xs-12 category__card-item" data-aos="fade-right">
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="/" className="top-banner__button">Go somewhere</a>
+              <h5>Junior Category</h5>
+              <img className="category__card__img" src={Junior} alt="" />
             </div>
           </div>
-          <div className="card col-6 category__card-item" data-aos="fade-left">
-            <img className="card-img-top" src="" alt="" />
+          <div className="card col-xs-12 category__card-item" data-aos="fade-left">
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="/" className="top-banner__button">Go somewhere</a>
+              <h5>Senior Category</h5>
+              <img className="category__card__img" src={Senior} alt="" />
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/css/style.css';
+import './assets/css/responsive.css';
 
 ReactDOM.render(
   <React.StrictMode>

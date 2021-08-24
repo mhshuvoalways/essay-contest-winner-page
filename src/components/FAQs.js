@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TitleBottom from '../assets/images/others/title-bottom.png';
 
 const FAQs = () => {
+    const [state, setState] = useState({ id: '', open: false });
 
-    const collapseNow = () => {
-
+    const collapseNow = (id) => {
+        setState({ id: id, open: true });
     }
 
     return (
@@ -16,7 +17,7 @@ const FAQs = () => {
             <div className="faqs container">
                 <div>
                     <button className="top-banner__button top-banner__button--faqs"
-                        onClick={collapseNow(1)}>
+                        onClick={() => collapseNow(1)}>
                         <p>Collapse 1</p>
                         <span>+</span>
                     </button>
