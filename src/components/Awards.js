@@ -1,7 +1,6 @@
 import React from 'react';
-import FirstPrize from '../assets/images/awards/first-prize.png';
-import OtherPrize from '../assets/images/awards/other-prize.png';
-import { default as SecondPrize, default as SecondPrize2 } from '../assets/images/awards/second-prize.png';
+import FirstPrize from '../assets/images/awards/second-prize.png';
+import SecondPrize2 from '../assets/images/awards/first-prize.png';
 import Star from '../assets/images/awards/star.png';
 import TitleBottom from '../assets/images/others/title-bottom.png';
 
@@ -15,7 +14,7 @@ const Awards = () => {
             <div className="row">
                 <div className="card col-md-3 col-sm-6 award__card" data-aos="fade-up">
                     <img className="card-img-top" src={FirstPrize} alt="" />
-                    <div className="card-body award__card-body ">
+                    <div className="card-body award__card-body">
                         <div className="award__card-body__star">
                             <img src={Star} alt="star" className="award__card-body__star__img" />
                             <span>1</span>
@@ -24,8 +23,8 @@ const Awards = () => {
                     </div>
                 </div>
                 <div className="card col-md-3 col-sm-6 award__card" data-aos="fade-up">
-                    <img className="card-img-top" src={SecondPrize} alt="" />
-                    <div className="card-body award__card-body">
+                    <img className="card-img-top" src={SecondPrize2} alt="" />
+                    <div className="card-body award__card-body ">
                         <div className="award__card-body__star">
                             <img src={Star} alt="star" className="award__card-body__star__img" />
                             <span>2</span>
@@ -43,15 +42,14 @@ const Awards = () => {
                         <h5 className="card-title">Third Prize</h5>
                     </div>
                 </div>
-                <div className="card col-md-3 col-sm-6 award__card"
-                    data-aos="fade-up">
-                    <img className="card-img-top" src={OtherPrize} alt="" />
+                <div className="card col-md-3 col-sm-6 award__card" data-aos="fade-up">
+                    <img className="card-img-top" src={SecondPrize2} alt="" />
                     <div className="card-body award__card-body">
                         <div className="award__card-body__star">
                             <img src={Star} alt="star" className="award__card-body__star__img" />
                             <span>4</span>
                         </div>
-                        <h5 className="card-title">Other Prize</h5>
+                        <h5 className="card-title">Fourth Prize</h5>
                     </div>
                 </div>
             </div>

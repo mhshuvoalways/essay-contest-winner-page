@@ -97,9 +97,8 @@ a:hover {
 
 /* Nav start */
 .our-nav {
-  background-color: var(--nav-color);
+  background-color: #7BB9AE;
   padding: 10px 0;
-  border-bottom: 3px solid var(--text-color);
 }
 
 .nav__img-bottom {
@@ -130,7 +129,7 @@ a:hover {
 
 /* Banner start */
 .top-banner {
-  background-image: url(../images/others/banner.jpg);
+  background-image: url(../images/others/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 110vh;

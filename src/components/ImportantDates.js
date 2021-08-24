@@ -4,7 +4,7 @@ import TitleBottom from '../assets/images/others/title-bottom.png';
 const ImportantDates = () => {
     return (
         <div className="section container">
-            <h2 className="section__title">Essay Topic</h2>
+            <h2 className="section__title">Topic Of The Month</h2>
             <img className="section__title__img" src={TitleBottom} alt="" />
             <p className="section__title__details">One sportsman who created history</p>
 
