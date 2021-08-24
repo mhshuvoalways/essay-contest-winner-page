@@ -1,6 +1,7 @@
 import React from 'react';
 import FirstPrize from '../assets/images/awards/second-prize.png';
 import SecondPrize2 from '../assets/images/awards/first-prize.png';
+import FourthPrize from '../assets/images/awards/fourth-prize.mp4';
 import Star from '../assets/images/awards/star.png';
 import TitleBottom from '../assets/images/others/title-bottom.png';
 
@@ -43,7 +44,9 @@ const Awards = () => {
                     </div>
                 </div>
                 <div className="card col-md-3 col-sm-6 award__card" data-aos="fade-up">
-                    <img className="card-img-top" src={SecondPrize2} alt="" />
+                    <video autoPlay muted className="awards__video">
+                        <source src={FourthPrize} className="card-img-top" />
+                    </video>
                     <div className="card-body award__card-body">
                         <div className="award__card-body__star">
                             <img src={Star} alt="star" className="award__card-body__star__img" />

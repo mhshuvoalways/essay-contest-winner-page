@@ -97,7 +97,7 @@ a:hover {
 
 /* Nav start */
 .our-nav {
-  background-color: #0B112A;
+  background-color: #0b112a;
   padding: 10px 0;
 }
 
@@ -206,6 +206,10 @@ a:hover {
   display: block !important;
   margin: 15px auto;
   width: 260px !important;
+}
+
+.awards__video {
+  width: 230px;
 }
 
 .slick-arrow.slick-prev {
