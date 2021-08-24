@@ -110,7 +110,7 @@ a:hover {
 }
 
 .top-banner__button {
-  margin: 0 auto;
+  margin: 10px auto;
   display: block;
 }
 
@@ -189,23 +189,16 @@ a:hover {
 
 /* Important dates start */
 .important-date__details {
-  position: relative;
-}
-.important-date__details__img {
-  display: block;
-  margin: 0 auto;
-  width: 60%;
+  background-image: url("../images/others/important-date.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .important-date__details__contant {
-  position: absolute;
-  top: -10%;
-  left: 22%;
-  right: 22%;
-  bottom: 0%;
+  padding: 70px;
   text-align: center;
-  margin-top: 85px;
-  color: #e47340;
+  color: var(--section-title-color);
 }
+
 /* Important dates end */
 
 /* Award start */
@@ -346,3 +339,29 @@ a:hover {
   display: block;
 }
 /* FAQs end */
+
+/* Footer start */
+.footer {
+  background-color: #111111;
+  width: 100%;
+  color: var(--text-color);
+}
+.footer__social {
+  padding: 70px 100px;
+  text-align: justify;
+}
+.footer__social__icon {
+  display: flex;
+  gap: 50px;
+}
+.footer__social-media {
+  font-size: 50px;
+  cursor: pointer;
+}
+.footer__social__para {
+  padding: 0 80px;
+}
+.footer__social__social {
+  padding: 0 80px;
+}
+/* Footer end */

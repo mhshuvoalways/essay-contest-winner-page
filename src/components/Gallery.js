@@ -25,7 +25,7 @@ const Gallery = () => {
         <div className="section">
             <h2 className="section__title">Photo Gallery</h2>
             <img className="section__title__img" src={TitleBottom} alt="" />
-            <p className="section__title__details">Identifying Wizards and honoring them the right way
+            <p className="section__title__details">Past winner advertisement
             </p>
             <div className="gallery">
                 <div className="row">

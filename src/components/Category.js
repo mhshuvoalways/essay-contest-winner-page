@@ -8,7 +8,7 @@ const Category = () => {
     <div className="section category">
       <h2 className="section__title">Our Category</h2>
       <img className="section__title__img" src={TitleBottom} alt="" />
-      <p className="section__title__details">Some words about this category</p>
+      <p className="section__title__details">There are two categories are here</p>
       <div className="category__bg">
         <div className="container row category__card">
           <div className="card col-xs-12 category__card-item" data-aos="fade-up">

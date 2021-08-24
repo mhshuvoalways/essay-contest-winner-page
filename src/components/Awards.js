@@ -10,7 +10,7 @@ const Awards = () => {
         <div className="section container">
             <h2 className="section__title">Awards</h2>
             <img className="section__title__img" src={TitleBottom} alt="" />
-            <p className="section__title__details">Identifying Wizards and honoring them the right way
+            <p className="section__title__details">There are four awards are here
             </p>
             <div className="row">
                 <div className="card col-md-3 col-sm-6 award__card" data-aos="fade-up">
