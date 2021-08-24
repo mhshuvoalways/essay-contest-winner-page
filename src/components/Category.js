@@ -1,7 +1,7 @@
 import React from 'react';
 import TitleBottom from '../assets/images/others/title-bottom.png';
-import Junior from '../assets/images/others/junior.jpg';
-import Senior from '../assets/images/others/senior.jpg';
+import Junior from '../assets/images/others/junior.jpeg';
+import Senior from '../assets/images/others/senior.jpeg';
 
 const Category = () => {
   return (

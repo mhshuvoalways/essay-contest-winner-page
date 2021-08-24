@@ -1,18 +1,7 @@
 import AOS from 'aos';
 import React, { useEffect } from 'react';
 import { Helmet } from "react-helmet";
-import About from '../components/About';
-import Awards from '../components/Awards';
-import Category from '../components/Category';
-import FAQs from '../components/FAQs';
-import Gallery from '../components/Gallery';
-import Guideline from '../components/Guideline';
-import ImportantDates from '../components/ImportantDates';
-import Magazine from '../components/Magazine';
-import Navigation from '../components/Navigation';
-import RulesRegulation from '../components/Rules&Regulation';
-import Footer from '../components/Footer';
-import Banner from '../components/TopBanner';
+import AllComponents from './router'
 
 function App() {
   useEffect(() => {
@@ -35,18 +24,7 @@ function App() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       </Helmet>
       <div>
-        <Navigation />
-        <Banner />
-        <About />
-        <Category />
-        <ImportantDates />
-        <Awards />
-        <Gallery />
-        <Magazine />
-        <Guideline />
-        <FAQs />
-        <RulesRegulation />
-        <Footer />
+        <AllComponents />
       </div>
     </div>
   );
