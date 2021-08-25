@@ -1,47 +1,59 @@
 import React, { useState } from 'react';
 import Logo from '../assets/images/others/logo.png';
 
-const Navigation = () => {
+const Navigation = ({ refHandler }) => {
     const [state, setState] = useState({ show: false });
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light our-nav fixed-top">
             <div className="container">
-                <a className="navbar-brand" href="/">
+                <p className="navbar-brand"
+                    onClick={() => refHandler('home')}
+                >
                     <img className="our-nav__img" src={Logo} alt="" />
-                </a>
+                </p>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                     onClick={() => setState({ show: !state.show })}>
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className={`collapse navbar-collapse ${state.show ? 'collapse__show' : 'collapse__hide'}`}>
                     <ul className="nav navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <a className="nav-link active nav__item-color" aria-current="page" href="/">Home</a>
+                        <li className="nav-item"
+                            onClick={() => refHandler('home')}
+                        >
+                            <p className="nav-link active nav__item-color" aria-current="page">Home</p>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link active nav__item-color" aria-current="page" href="/">About</a>
+                        <li className="nav-item"
+                            onClick={() => refHandler('about')}>
+                            <p className="nav-link active nav__item-color" aria-current="page">About</p>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link active nav__item-color" aria-current="page" href="/">Category</a>
+                        <li className="nav-item"
+                            onClick={() => refHandler('category')}>
+                            <p className="nav-link active nav__item-color" aria-current="page">Category</p>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link active nav__item-color" aria-current="page" href="/">Dates</a>
+                        <li className="nav-item"
+                            onClick={() => refHandler('essay')}>
+                            <p className="nav-link active nav__item-color" aria-current="page">Eassy</p>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link active nav__item-color" aria-current="page" href="/">Awards</a>
+                        <li className="nav-item"
+                            onClick={() => refHandler('awards')}>
+                            <p className="nav-link active nav__item-color" aria-current="page">Awards</p>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link active nav__item-color" aria-current="page" href="/">Gallery</a>
+                        <li className="nav-item"
+                            onClick={() => refHandler('gallery')}>
+                            <p className="nav-link active nav__item-color" aria-current="page">Gallery</p>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link active nav__item-color" aria-current="page" href="/">Magazine</a>
+                        <li className="nav-item"
+                            onClick={() => refHandler('magazines')}>
+                            <p className="nav-link active nav__item-color" aria-current="page">Magazines</p>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link active nav__item-color" aria-current="page" href="/">Guideline </a>
+                        <li className="nav-item"
+                            onClick={() => refHandler('guideline')}>
+                            <p className="nav-link active nav__item-color" aria-current="page">Guideline</p>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link active nav__item-color" aria-current="page" href="/">FAQs</a>
+                        <li className="nav-item"
+                            onClick={() => refHandler('faqs')}>
+                            <p className="nav-link active nav__item-color" aria-current="page">FAQs</p>
                         </li>
                     </ul>
                 </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import TitleBottom from '../assets/images/others/title-bottom.png';
 import M2 from '../assets/images/magazines/m2.jpg';
 import M3 from '../assets/images/magazines/m3.jpg';
@@ -8,7 +8,13 @@ import M11 from '../assets/images/magazines/m11.jpg';
 import M13 from '../assets/images/magazines/m13.jpg';
 import Slider from "react-slick";
 
-const Magazines = () => {
+const Magazines = ({ goTo}) => {
+    const magazineRef = useRef(null)
+
+    if (goTo) {
+        magazineRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+
     var settings = {
         infinite: true,
         speed: 500,
@@ -19,7 +25,7 @@ const Magazines = () => {
     };
 
     return (
-        <div className="section">
+        <div ref={magazineRef} className="section">
             <h2 className="section__title">Our Magazines</h2>
             <img className="section__title__img" src={TitleBottom} alt="" />
             <p className="section__title__details">Click into magazines to read for free

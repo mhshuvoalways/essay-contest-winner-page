@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import TitleBottom from '../assets/images/others/title-bottom.png';
 
-const RulesRegulation = () => {
+const RulesRegulation = ({ goTo }) => {
+    const rulesRef = useRef(null)
+
+    if (goTo) {
+        rulesRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+
     return (
-        <div className="section container">
+        <div ref={rulesRef} className="section container">
             <h2 className="section__title">Rules & Regulations</h2>
             <img className="section__title__img" src={TitleBottom} alt="" />
             <p className="section__title__details">Please don't violate any restrictions

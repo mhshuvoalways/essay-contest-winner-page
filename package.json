@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "school-eassy-contest-website",
   "homepage": ".",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +11,6 @@
     "bootstrap": "^5.1.0",
     "file-saver": "^2.0.5",
     "react": "^17.0.2",
-    "react-collapsible": "^2.8.3",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",

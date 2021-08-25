@@ -99,6 +99,7 @@ a:hover {
 .our-nav {
   background-color: #0b112a;
   padding: 10px 0;
+  padding-bottom: 0px;
 }
 
 .nav__img-bottom {
@@ -116,6 +117,7 @@ a:hover {
 .nav__item-color {
   color: var(--text-color) !important;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .collapse__show {

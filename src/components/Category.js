@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import TitleBottom from '../assets/images/others/title-bottom.png';
 import Junior from '../assets/images/others/junior.jpeg';
 import Senior from '../assets/images/others/senior.jpeg';
 
-const Category = () => {
+const Category = ({ goTo }) => {
+  const categoryRef = useRef(null)
+
+  if (goTo) {
+    categoryRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+  }
   return (
-    <div className="section category">
+    <div ref={categoryRef} className="section category">
       <h2 className="section__title">Our Category</h2>
       <img className="section__title__img" src={TitleBottom} alt="" />
       <p className="section__title__details">There are two categories are here</p>

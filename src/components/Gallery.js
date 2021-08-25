@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Img1 from '../assets/images/gallery/1b.jpg';
 import Img9 from '../assets/images/gallery/2b.jpg';
 import Img2 from '../assets/images/gallery/3b.jpg';
@@ -11,7 +11,13 @@ import Img8 from '../assets/images/gallery/9b.jpg';
 import TitleBottom from '../assets/images/others/title-bottom.png';
 import Slider from "react-slick";
 
-const Gallery = () => {
+const Gallery = ({ goTo }) => {
+    const galleryRef = useRef(null)
+
+    if (goTo) {
+        galleryRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+
     var settings = {
         infinite: true,
         speed: 500,
@@ -22,7 +28,7 @@ const Gallery = () => {
     };
 
     return (
-        <div className="section">
+        <div ref={galleryRef} className="section">
             <h2 className="section__title">Photo Gallery</h2>
             <img className="section__title__img" src={TitleBottom} alt="" />
             <p className="section__title__details">Past winner advertisement

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import TitleBottom from '../assets/images/others/title-bottom.png';
 
-const ImportantDates = () => {
+const ImportantDates = ({ goTo }) => {
+    const importantRef = useRef(null)
+
+    if (goTo) {
+        importantRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
+
     return (
-        <div className="section container">
+        <div ref={importantRef} className="section container">
             <h2 className="section__title">Topic Of The Month</h2>
             <img className="section__title__img" src={TitleBottom} alt="" />
             <p className="section__title__details">One sportsman who created history</p>

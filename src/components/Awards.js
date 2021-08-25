@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import FirstPrize from '../assets/images/awards/second-prize.png';
 import SecondPrize2 from '../assets/images/awards/first-prize.png';
 import FourthPrize from '../assets/images/awards/fourth-prize.mp4';
 import Star from '../assets/images/awards/star.png';
 import TitleBottom from '../assets/images/others/title-bottom.png';
 
-const Awards = () => {
+const Awards = ({ goTo }) => {
+    const awardRef = useRef(null)
+
+    if (goTo) {
+        awardRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+    }
     return (
-        <div className="section container">
+        <div ref={awardRef} className="section container">
             <h2 className="section__title">Awards</h2>
             <img className="section__title__img" src={TitleBottom} alt="" />
             <p className="section__title__details">There are four awards are here
