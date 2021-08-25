@@ -22,9 +22,21 @@ const Gallery = ({ goTo }) => {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         autoplay: true,
-        autoplaySpeed: 1000
+        autoplaySpeed: 1000,
+
+        responsive: [{
+            breakpoint: 600,
+            settings: {
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+            }
+        }]
     };
 
     return (
