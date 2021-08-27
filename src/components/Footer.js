@@ -17,9 +17,12 @@ const Footer = () => {
                             <h4>Social Media</h4>
                             <hr />
                             <div className="footer__social__icon">
-                                <p><i className="footer__social-media fab fa-facebook"></i></p>
-                                <p><i className="footer__social-media fab fa-instagram"></i></p>
-                                <p><i className="footer__social-media fab fa-youtube"></i></p>
+                                <a target="_blank" href="
+                                https://www.facebook.com" rel="noopener noreferrer"><i className="footer__social-media fab fa-facebook"></i></a>
+                                <a target="_blank" href="
+                                https://www.facebook.com" rel="noopener noreferrer"><i className="footer__social-media fab fa-instagram"></i></a>
+                                <a target="_blank" href="
+                                https://www.facebook.com" rel="noopener noreferrer"><i className="footer__social-media fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>

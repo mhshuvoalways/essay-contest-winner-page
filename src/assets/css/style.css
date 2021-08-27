@@ -283,7 +283,8 @@ a:hover {
   background-image: url("../images/magazines/magazine-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 600px;
+  background-position: center;
 }
 .magazines__details {
   display: block;
@@ -291,7 +292,7 @@ a:hover {
 }
 .magazine__img {
   width: 100%;
-  height: 260px;
+  height: 340px;
 }
 .magazines .slick-arrow.slick-prev {
   display: none !important;
