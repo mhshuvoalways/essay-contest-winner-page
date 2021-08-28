@@ -50,29 +50,29 @@ const Gallery = ({ goTo }) => {
                     <div className="magazines__details container">
                         <Slider {...settings}>
                             <div className="card award__card" data-aos="fade-up">
-                                <img className="magazine__img" src={Img1} alt="" />
+                                <img className="magazine__img--height" src={Img1} alt="" />
                             </div>
                             <div className="card award__card" data-aos="fade-up">
-                                <img className="magazine__img" src={Img9} alt="" />
+                                <img className="magazine__img--height" src={Img9} alt="" />
                             </div><div className="card award__card" data-aos="fade-up">
-                                <img className="magazine__img" src={Img3} alt="" />
+                                <img className="magazine__img--height" src={Img3} alt="" />
                             </div><div className="card award__card" data-aos="fade-up">
-                                <img className="magazine__img" src={Img2} alt="" />
+                                <img className="magazine__img--height" src={Img2} alt="" />
                             </div>
                             <div className="card award__card" data-aos="fade-up">
-                                <img className="magazine__img" src={Img4} alt="" />
+                                <img className="magazine__img--height" src={Img4} alt="" />
                             </div>
                             <div className="card award__card" data-aos="fade-up">
-                                <img className="magazine__img" src={Img5} alt="" />
+                                <img className="magazine__img--height" src={Img5} alt="" />
                             </div>
                             <div className="card award__card" data-aos="fade-up">
-                                <img className="magazine__img" src={Img6} alt="" />
+                                <img className="magazine__img--height" src={Img6} alt="" />
                             </div>
                             <div className="card award__card" data-aos="fade-up">
-                                <img className="magazine__img" src={Img7} alt="" />
+                                <img className="magazine__img--height" src={Img7} alt="" />
                             </div>
                             <div className="card award__card" data-aos="fade-up">
-                                <img className="magazine__img" src={Img8} alt="" />
+                                <img className="magazine__img--height" src={Img8} alt="" />
                             </div>
                         </Slider>
                     </div>
