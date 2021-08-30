@@ -28,6 +28,10 @@ const Navigation = ({ refHandler }) => {
                             <p className="nav-link active nav__item-color" aria-current="page">About</p>
                         </li>
                         <li className="nav-item"
+                            onClick={() => refHandler('award')}>
+                            <p className="nav-link active nav__item-color" aria-current="page">Awards</p>
+                        </li>
+                        <li className="nav-item"
                             onClick={() => refHandler('category')}>
                             <p className="nav-link active nav__item-color" aria-current="page">Category</p>
                         </li>
@@ -36,8 +40,8 @@ const Navigation = ({ refHandler }) => {
                             <p className="nav-link active nav__item-color" aria-current="page">Eassy</p>
                         </li>
                         <li className="nav-item"
-                            onClick={() => refHandler('awards')}>
-                            <p className="nav-link active nav__item-color" aria-current="page">Awards</p>
+                            onClick={() => refHandler('prize')}>
+                            <p className="nav-link active nav__item-color" aria-current="page">Prizes</p>
                         </li>
                         <li className="nav-item"
                             onClick={() => refHandler('gallery')}>

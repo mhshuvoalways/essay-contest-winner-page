@@ -164,6 +164,10 @@ a:hover {
 .about__details {
   text-align: justify;
 }
+.award__card-img{
+  width: 232px;
+  height: 355px;
+}
 /* About end */
 
 /* Category start */

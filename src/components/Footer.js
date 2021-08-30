@@ -18,11 +18,11 @@ const Footer = () => {
                             <hr />
                             <div className="footer__social__icon">
                                 <a target="_blank" href="
-                                https://www.facebook.com" rel="noopener noreferrer"><i className="footer__social-media fab fa-facebook"></i></a>
+                                https://www.facebook.com/Monomousumi" rel="noopener noreferrer"><i className="footer__social-media fab fa-facebook"></i></a>
                                 <a target="_blank" href="
-                                https://www.facebook.com" rel="noopener noreferrer"><i className="footer__social-media fab fa-instagram"></i></a>
+                                https://www.instagram.com/monomousumi" rel="noopener noreferrer"><i className="footer__social-media fab fa-instagram"></i></a>
                                 <a target="_blank" href="
-                                https://www.facebook.com" rel="noopener noreferrer"><i className="footer__social-media fab fa-youtube"></i></a>
+                                https://www.youtube.com/channel/UCBztOuTpBK2ONIBLlNo0Nkw" rel="noopener noreferrer"><i className="footer__social-media fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
