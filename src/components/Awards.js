@@ -3,7 +3,7 @@ import FirstPrize from "../assets/images/awards/award1.jpeg";
 import SecondPrize from "../assets/images/awards/award2.jpeg";
 import ThirdPrize from "../assets/images/awards/award3.jpeg";
 import FourthPrize from "../assets/images/awards/award4.jpeg";
-import Star from "../assets/images/awards/star.png";
+import Staraward from "../assets/images/awards/staraward.png";
 import TitleBottom from "../assets/images/others/title-bottom.png";
 
 const Awards = ({ goTo }) => {
@@ -23,11 +23,10 @@ const Awards = ({ goTo }) => {
           <div className="card-body award__card-body">
             <div className="award__card-body__star">
               <img
-                src={Star}
+                src={Staraward}
                 alt="star"
                 className="award__card-body__star__img"
               />
-              <span>1</span>
             </div>
             <h5 className="card-title">First Award</h5>
           </div>
@@ -37,11 +36,10 @@ const Awards = ({ goTo }) => {
           <div className="card-body award__card-body ">
             <div className="award__card-body__star">
               <img
-                src={Star}
+                src={Staraward}
                 alt="star"
                 className="award__card-body__star__img"
               />
-              <span>2</span>
             </div>
             <h5 className="card-title">Second Award</h5>
           </div>
@@ -51,11 +49,10 @@ const Awards = ({ goTo }) => {
           <div className="card-body award__card-body">
             <div className="award__card-body__star">
               <img
-                src={Star}
+                src={Staraward}
                 alt="star"
                 className="award__card-body__star__img"
               />
-              <span>3</span>
             </div>
             <h5 className="card-title">Third Award</h5>
           </div>
@@ -65,11 +62,10 @@ const Awards = ({ goTo }) => {
           <div className="card-body award__card-body">
             <div className="award__card-body__star">
               <img
-                src={Star}
+                src={Staraward}
                 alt="star"
                 className="award__card-body__star__img"
               />
-              <span>3</span>
             </div>
             <h5 className="card-title">Third Award</h5>
           </div>

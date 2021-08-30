@@ -164,9 +164,9 @@ a:hover {
 .about__details {
   text-align: justify;
 }
-.award__card-img{
+.award__card-img {
   width: 232px;
-  height: 355px;
+  height: 235px;
 }
 /* About end */
 
@@ -241,6 +241,7 @@ a:hover {
 }
 .award__card-body__star__img {
   animation: mymove infinite 3s linear;
+  width: 80px;
 }
 .award__card-body__star span {
   font-size: 24px;
@@ -277,7 +278,7 @@ a:hover {
 .gallery .slick-arrow.slick-next {
   display: none !important;
 }
-.magazine__img--height{
+.magazine__img--height {
   width: 100%;
   height: 175px;
 }
