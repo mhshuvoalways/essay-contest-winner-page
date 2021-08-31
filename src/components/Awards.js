@@ -68,7 +68,7 @@ const Awards = ({ goTo }) => {
                 className="award__card-body__star__img"
               />
             </div>
-            <h5 className="card-title">Third Award</h5>
+            <h5 className="card-title">Fourth Award</h5>
           </div>
         </div>
       </div>
