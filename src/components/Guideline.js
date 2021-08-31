@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Flowchart from "../assets/images/others/flow-chart.png";
+import Videos from "../assets/images/others/guideLines.mp4";
 
 const Guideline = ({ goTo }) => {
   const guideLineRef = useRef(null);
@@ -16,12 +16,9 @@ const Guideline = ({ goTo }) => {
         Identifying Wizards and honoring them the right way
       </p>
       <div className="container">
-        <img
-          data-aos="fade-up"
-          src={Flowchart}
-          alt=""
-          className="guideline__chart"
-        />
+        <video autoPlay muted className="guideline__chart__video">
+          <source src={Videos} className="card-img-top" />
+        </video>
       </div>
     </div>
   );

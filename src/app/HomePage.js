@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import About from "../components/About";
-import Award from "../components/Awards";
+import Award from "../components/Achivments";
 import Prizes from "../components/Prizes";
 import Category from "../components/Category";
 import FAQs from "../components/FAQs";

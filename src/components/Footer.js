@@ -8,12 +8,13 @@ const Footer = () => {
           <div className="col-md-6 col-sm-12">
             <div className="footer__social__para">
               <p>
-                This is a platform to express and share feelings, experiences to
-                make our life better. Everyone is welcome to contribute in this
-                forum as far as it’s not harming other’s sentiments. Let’s make
-                the world better place to stay by sharing “words”.
+                Mononomosuumi is an Indian Edutech Platform, that brings
+                together technology to the education sector and providing
+                requisite support to students, writers and school
+                administrations. It provides writing related extracurricular
+                activities accessible through technology-driven solutions.
               </p>
-              <p>Contact us: monomousumi18@gmail.com</p>
+              <p>Contact us: essay.monomousumi@gmail.com</p>
             </div>
           </div>
           <div className="col-md-6 col-sm-12">
@@ -43,7 +44,7 @@ const Footer = () => {
                                 https://twitter.com/monomousumi_mk"
                   rel="noopener noreferrer"
                 >
-                  <i className="footer__social-media fab fa-twitter"></i>
+                  <i className="footer__social-media fab fa-pinterest"></i>
                 </a>
                 <a
                   target="_blank"

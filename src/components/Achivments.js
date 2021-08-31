@@ -13,7 +13,7 @@ const Awards = ({ goTo }) => {
   }
   return (
     <div ref={awardRef} className="section container">
-      <h2 className="section__title">Awards</h2>
+      <h2 className="section__title">Achievements</h2>
       <p className="section__title__border"></p>
       <p className="section__title__details">
         Recipients of Many National and International Accolades.
@@ -29,7 +29,6 @@ const Awards = ({ goTo }) => {
                 className="award__card-body__star__img"
               />
             </div>
-            <h5 className="card-title">First Award</h5>
           </div>
         </div>
         <div className="card col-md-3 col-sm-6 award__card" data-aos="fade-up">
@@ -42,7 +41,6 @@ const Awards = ({ goTo }) => {
                 className="award__card-body__star__img"
               />
             </div>
-            <h5 className="card-title">Second Award</h5>
           </div>
         </div>
         <div className="card col-md-3 col-sm-6 award__card" data-aos="fade-up">
@@ -55,7 +53,6 @@ const Awards = ({ goTo }) => {
                 className="award__card-body__star__img"
               />
             </div>
-            <h5 className="card-title">Third Award</h5>
           </div>
         </div>
         <div className="card col-md-3 col-sm-6 award__card" data-aos="fade-up">
@@ -68,7 +65,6 @@ const Awards = ({ goTo }) => {
                 className="award__card-body__star__img"
               />
             </div>
-            <h5 className="card-title">Fourth Award</h5>
           </div>
         </div>
       </div>

@@ -201,7 +201,7 @@ a:hover {
 .important-date__details__contant {
   padding: 70px;
   text-align: center;
-  color: var(--section-title-color);
+  color: #292230;
 }
 
 /* Important dates end */
@@ -281,7 +281,7 @@ a:hover {
 }
 .magazine__img--height {
   width: 100%;
-  height: 175px;
+  height: 330px;
 }
 
 /* Gallery end */
@@ -310,12 +310,10 @@ a:hover {
 /* Magazine end */
 
 /* Guidlines start */
-.guideline__chart {
+.guideline__chart__video {
+  width: 750px;
+  margin: auto;
   display: block;
-  margin: 0 auto;
-}
-.guideline__chart {
-  width: 60%;
 }
 /* Guidlines end */
 

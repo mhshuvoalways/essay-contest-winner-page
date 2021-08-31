@@ -14,7 +14,7 @@ const Awards = ({ goTo }) => {
     <div ref={prizeRef} className="section container">
       <h2 className="section__title">Prizes</h2>
       <p className="section__title__border"></p>
-      <p className="section__title__details">There are four prizes</p>
+      <p className="section__title__details">There are many prizes</p>
       <div className="row">
         <div className="card col-md-3 col-sm-6 award__card" data-aos="fade-up">
           <img className="card-img-top" src={FirstPrize} alt="" />
@@ -71,7 +71,7 @@ const Awards = ({ goTo }) => {
               />
               <span>4</span>
             </div>
-            <h5 className="card-title">Fourth Prize</h5>
+            <h5 className="card-title">Other Prizes</h5>
           </div>
         </div>
       </div>

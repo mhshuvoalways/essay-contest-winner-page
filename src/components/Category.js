@@ -22,7 +22,7 @@ const Category = ({ goTo }) => {
             data-aos="fade-up"
           >
             <div className="card-body">
-              <h5>Junior category (14Years Old - )</h5>
+              <h5>Junior category (14 Years Old - )</h5>
               <hr />
               <img className="category__card__img" src={Junior} alt="" />
             </div>
