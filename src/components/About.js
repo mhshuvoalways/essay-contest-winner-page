@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import TitleBottom from "../assets/images/others/title-bottom.png";
 
 const About = ({ goTo }) => {
   const aboutRef = useRef(null);
@@ -11,7 +10,7 @@ const About = ({ goTo }) => {
   return (
     <div ref={aboutRef} className="section about container">
       <h2 className="section__title">About Contest</h2>
-      <img className="section__title__img" src={TitleBottom} alt="" />
+      <p className="section__title__border"></p>
       <p className="section__title__details">Some words about the contest</p>
       <div data-aos="fade-up" className="about__details">
         <br />

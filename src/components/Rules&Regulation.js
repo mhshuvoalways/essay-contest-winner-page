@@ -1,64 +1,104 @@
-import React, { useRef } from 'react';
-import TitleBottom from '../assets/images/others/title-bottom.png';
+import React, { useRef } from "react";
 
 const RulesRegulation = ({ goTo }) => {
-    const rulesRef = useRef(null)
+  const rulesRef = useRef(null);
 
-    if (goTo) {
-        rulesRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
-    }
+  if (goTo) {
+    rulesRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+  }
 
-    return (
-        <div ref={rulesRef} className="section container">
-            <h2 className="section__title">Rules & Regulations</h2>
-            <img className="section__title__img" src={TitleBottom} alt="" />
-            <p className="section__title__details">Please don't violate any restrictions
-            </p>
-            <div data-aos="fade-up">
-                <p>
-                    * This competition is only for students studying in classes 1 to 12.<br />
-
-                    *There will be a nominal registration fee for each level towards the cost of study materials & conduction. The fees paid is non refundable.<br />
-
-                    * WIZ National Spell Bee is a Progressive Learning methodology, comprising School level, Inter-school, State level and National Mega Finals.<br />
-
-                    * This competition starts at the school level simultaneously in all the cities throughout India. It progresses from the School level to the Interschool, leading to the State level and culminating in the National Mega Final.<br />
-
-                    * School Level Competition:<br />
-
-                    * Students have to prepare from the school-level preparatory booklet WORD BANK, comprising 1,500 words and exercises provided. Students who qualify in the School level will be eligible for the Inter-school competition<br />
-
-                    * Schools may opt for Online/Offline competition as per their convenience. In cases of bulk enrolment, study materials can be availed online or hard copy can also be sent to the school for each participant.<br />
-
-                    * Inter-school Competition:<br />
-
-                    * Inter-school contestants are requested to practise from WORD BANK of the school and Inter-school levels. The Inter-school preparatory booklet comprises 1,250 words and exercises. Seventy percent questions will be from these books. To answer the remaining thirty percent questions, participants must inculcate the habit of regularly reading books and English newspapers. They also need to watch the news and movies. Students who qualify in the Inter-school level will be eligible for the state level<br />
-
-                    * State Level Competition:<br />
-
-                    * State Level contestants are requested to practise from WORD BANK of the school, Inter-school and State levels. The State Level preparatory booklet comprises 1,250 words and exercises. Seventy percent questions will be from these books. To answer the remaining thirty percent questions, participants must inculcate the habit of regularly reading books and English newspapers. They also need to watch the news and movies. Students who qualify in the State level will be eligible for the National level. Toppers are selected from each State for the National Level Mega Final.<br />
-
-                    * The State Level rank holders are decided based on the oral score only .It will be conducted along with National mega final Oral<br />
-
-                    * National Mega Final:<br />
-
-                    State-level toppers of each class are eligible for the National Mega Final. Study materials and instructions for National Mega Final will be provided<br />
-
-                    * Any incorrect/fraudulent entries will be disqualified<br />
-
-                    * Results will be updated on the website and can be accessed using the personal login id, which is your registered mobile number<br />
-
-                    * Prizes will be sent to the respective schools<br />
-
-                    * The amount of the cash award depends on the sponsors and number of participants for the contest<br />
-
-                    * If the name of your school doesn't appear in the drop down list please email us at info@wizspellbee.com<br />
-
-                    * The organisers reserve the right to alter the terms and conditions of the competition at their discretion without any notice<br />
-                </p>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div ref={rulesRef} className="section container">
+      <h2 className="section__title">Rules & Regulations</h2>
+      <p className="section__title__border"></p>
+      <p className="section__title__details">
+        Please don't violate any restrictions
+      </p>
+      <div data-aos="fade-up">
+        <ul>
+          <li>
+            The essay should be{" "}
+            <strong>
+              MINIMUM 750 WORDS for senior category and 500 words for junior
+              category. There is no maximum word count.
+            </strong>
+          </li>
+          <li>
+            The submitted essay should be{" "}
+            <strong>
+              plagiarism free/no copy from internet/unique writing.{" "}
+            </strong>
+            Please check your essay in this link&nbsp;
+            <strong>
+              <a href="https://smallseotools.com/plagiarism-checker/">
+                plagiarism checking tool
+              </a>
+            </strong>{" "}
+            before sending to us and{" "}
+            <strong>submit the screenshot of the plagiarism report.</strong>{" "}
+            Plagiarized essay will not be accepted for the contest.&nbsp; This
+            is to encourage participants to write their own essay. We highly
+            discourage copying.{" "}
+            <strong>SO NO CERTIFICATE FOR COPIED ESSAYS.&nbsp;</strong>
+          </li>
+          <li>
+            {" "}
+            <strong>Age proof </strong>is must <strong>only </strong>for junior
+            category participants. Name of school, school website or email is{" "}
+            <strong>not mandatory</strong> but you are encouraged to provide
+            email address of principal/administration. Our team will inform the
+            school authorities about the result if the participant is judged
+            winner or did outstanding in the contest.{" "}
+          </li>
+          <li>
+            You should write your{" "}
+            <strong>name, age, city, phone number, email</strong>, photo (
+            <strong>optional</strong>) in your entry in the very beginning
+            before you start writing essay.
+          </li>
+          <li>You can participate every month.</li>
+          <li>
+            {" "}
+            Participants are encouraged to write in such a way to avoid writing
+            “I” or personal experiences unless the topic is such that you are
+            compelled to write your experience.{" "}
+          </li>
+          <li>
+            If any participants wish to send pictures, they should attach the
+            images separately as jpg. Sending pictures is{" "}
+            <strong>not mandatory.</strong>
+          </li>
+          <li>
+            The decision of Jury member is the <strong>FINAL</strong> and{" "}
+            <strong>no queries</strong> related to result will be entertained
+          </li>
+          <li>
+            Deadline for submission is <strong>25th of every month</strong>
+          </li>
+          <li>
+            For those participants, who (<strong>only those</strong>) does not
+            have access of computer/laptop, they can <strong>EMAIL </strong>
+            (essay.monomousumi@gmail.com) hand written essays following all the
+            rules mentioned above.&nbsp; Hand written essays will{" "}
+            <strong>not </strong>be published, but will be eligible for contest.
+            They are equally eligible but the essay will not be published.&nbsp;
+            So, if you do not have computer or laptop, you can just type in
+            mobile in part wise. Hand written essay should be considered as the{" "}
+            <strong>LAST OPTION.</strong>&nbsp;
+          </li>
+          <li>
+            Selected essays will be published in the website with the{" "}
+            <strong>name, photo and bio</strong> of the participants without the
+            need of prior permission. Sending your essay to us itself gives us
+            the authority to publish it from our side anywhere, online or in
+            digital magazines. However, participant can tell in the very
+            beginning that they are not interested in publishing the article
+            anywhere.&nbsp;
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 export default RulesRegulation;

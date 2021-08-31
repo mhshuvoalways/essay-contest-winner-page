@@ -1,33 +1,36 @@
-import React, { useRef } from 'react';
-import TitleBottom from '../assets/images/others/title-bottom.png';
+import React, { useRef } from "react";
 
 const ImportantDates = ({ goTo }) => {
-    const importantRef = useRef(null)
+  const importantRef = useRef(null);
 
-    if (goTo) {
-        importantRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
-    }
+  if (goTo) {
+    importantRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+  }
 
-    return (
-        <div ref={importantRef} className="section container">
-            <h2 className="section__title">Topic Of The Month</h2>
-            <img className="section__title__img" src={TitleBottom} alt="" />
-            <p className="section__title__details">One sportsman who created history</p>
-
-            <div className="important-date__details" data-aos="fade-up">
-                <div className="important-date__details__contant">
-                    <h3>Important Deadlines</h3>
-                    <hr />
-                    <p>Last date of Submission: 25thAugust 2021</p>
-                    <p>Result announcement: First week of September 2021</p>
-                    <p>Result announcement: Through this link</p>
-                    <button className="top-banner__button top-banner__button rainbow rainbow-1" data-aos="fade-up">
-                        Click For More Details
-                    </button>
-                </div>
-            </div>
+  return (
+    <div ref={importantRef} className="section container">
+      <h2 className="section__title">Topic of The Month</h2>
+      <p className="section__title__border"></p>
+      <h3 className="section__title__details">
+        One sportsman who created history
+      </h3>
+      <div className="important-date__details" data-aos="fade-up">
+        <div className="important-date__details__contant">
+          <h3>Important Deadlines</h3>
+          <hr />
+          <p>Last date of Submission: Last date -25th of Every Mont</p>
+          <p>Result announcement: First week of every month</p>
+          <p>New topic announcement date - 25th to 30th of every month</p>
+          <button
+            className="top-banner__button top-banner__button rainbow rainbow-1"
+            data-aos="fade-up"
+          >
+            Click For More Details
+          </button>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default ImportantDates;

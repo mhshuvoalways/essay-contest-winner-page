@@ -4,7 +4,6 @@ import SecondPrize from "../assets/images/awards/award2.jpeg";
 import ThirdPrize from "../assets/images/awards/award3.jpeg";
 import FourthPrize from "../assets/images/awards/award4.jpeg";
 import Staraward from "../assets/images/awards/staraward.png";
-import TitleBottom from "../assets/images/others/title-bottom.png";
 
 const Awards = ({ goTo }) => {
   const awardRef = useRef(null);
@@ -15,8 +14,10 @@ const Awards = ({ goTo }) => {
   return (
     <div ref={awardRef} className="section container">
       <h2 className="section__title">Awards</h2>
-      <img className="section__title__img" src={TitleBottom} alt="" />
-      <p className="section__title__details">There are four award are here</p>
+      <p className="section__title__border"></p>
+      <p className="section__title__details">
+        Recipients of Many National and International Accolades.
+      </p>
       <div className="row">
         <div className="card col-md-3 col-sm-6 award__card" data-aos="fade-up">
           <img className="award__card-img" src={FirstPrize} alt="" />

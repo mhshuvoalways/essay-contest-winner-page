@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import TitleBottom from "../assets/images/others/title-bottom.png";
 
 const FAQs = ({ goTo }) => {
   const [state, setState] = useState({ id: "", show: false });
@@ -16,7 +15,7 @@ const FAQs = ({ goTo }) => {
   return (
     <div ref={faqRef} className="section">
       <h2 className="section__title">FAQs</h2>
-      <img className="section__title__img" src={TitleBottom} alt="" />
+      <p className="section__title__border"></p>
       <p className="section__title__details">
         Frequently Asked Questions About Essay Contest
       </p>
