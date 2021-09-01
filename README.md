@@ -1,7 +1,6 @@
-# School-Essay-Contest-Website
+# Essay-Contest-Website
 
-This template was created for a client. It lives at https://
-school-essay-contest-website-mhs.netlify.app
+This template was created for a client. It lives at https://essay-contest-website-mhs.netlify.app
 
 ```bash
 Technology:
