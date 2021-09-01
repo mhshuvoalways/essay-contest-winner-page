@@ -21,6 +21,7 @@ const RulesRegulation = ({ goTo }) => {
             The essay should be submitted by this
             <a href="https://weavermag.com/essay-contest/public"> link.</a>
           </li>
+          <li>Language- English, Hindi, and Bengali</li>
           <li>The essay should be <b>MINIMUM 750 WORDS for senior category and 500 words for junior category. There is no maximum word count.</b></li>
           <li>The submitted essay should be <b>plagiarism free/no copy from the internet/unique writing.</b> Please check your essay in this link plagiarism checking tool before sending to us. Plagiarized essays will not be accepted for the contest.  This is to encourage participants to write their own essay. </li>
           <li><b>Age proof</b> is must only for junior category participants. Name of the school, school website or email is not mandatory but you are encouraged to provide the email address of the principal/administration. Our team will inform the school authorities about the result if the participant is judged winner or did outstanding in the contest.</li>

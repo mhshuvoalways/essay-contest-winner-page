@@ -33,7 +33,7 @@ const TopBanner = ({ goTo }) => {
           className="top-banner__button rainbow rainbow-1"
         >
           <img src={Download} alt="" />
-          DOWNLOAD BROCHURE
+          Media Kit
         </button>
       </div>
     </div>

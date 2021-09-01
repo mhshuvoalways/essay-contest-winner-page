@@ -9,7 +9,11 @@ const ImportantDates = ({ goTo }) => {
 
   return (
     <div ref={importantRef} className="section container">
-      <h2 className="section__title">Topic of The Month</h2>
+      <h2 className="section__title">
+      Theme: Book and Author
+      </h2>
+      <p className="section__title-p">(The essay should describe any one - book, review and
+        author biography)</p>
       <p className="section__title__border"></p>
       <h3 className="section__title__details">
         One sportsman who created history
