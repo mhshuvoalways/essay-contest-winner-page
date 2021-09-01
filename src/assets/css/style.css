@@ -45,7 +45,7 @@ a:hover {
 .section__title__border {
   margin: 0 auto;
   display: block;
-  width: 325px;
+  width: 210px;
   border: 3px double var(--second-text-color);
 }
 /* Button start*/
@@ -157,6 +157,10 @@ a:hover {
 }
 .top-banner__button--about {
   width: 100%;
+  text-align: center;
+}
+.top-banner__button-result {
+  width: 140px;
   text-align: center;
 }
 /* Banner end */
@@ -311,7 +315,7 @@ a:hover {
 
 /* Guidlines start */
 .guideline__chart__video {
-  width: 750px;
+  width: 80%;
   margin: auto;
   display: block;
 }
@@ -358,21 +362,25 @@ a:hover {
   color: var(--text-color);
 }
 .footer__social {
-  padding: 70px 100px;
-  text-align: justify;
+  padding: 40px 0;
 }
+
 .footer__social__icon {
-  display: flex;
-  gap: 50px;
+  text-align: center;
+  margin: 0 0px;
+}
+.footer__social__icon i {
+  margin: 15px;
 }
 .footer__social-media {
   font-size: 50px;
   cursor: pointer;
 }
 .footer__social__para {
-  padding: 0 80px;
+  padding: 10px 90px;
 }
 .footer__social__social {
-  padding: 0 80px;
+  width: 90%;
+  text-align: center;
 }
 /* Footer end */

@@ -24,32 +24,35 @@ const Footer = () => {
               <div className="footer__social__icon">
                 <a
                   target="_blank"
-                  href="
-                                https://www.facebook.com/Monomousumi"
+                  href="https://www.facebook.com/Monomousumi"
                   rel="noopener noreferrer"
                 >
                   <i className="footer__social-media fab fa-facebook"></i>
                 </a>
                 <a
                   target="_blank"
-                  href="
-                                https://www.instagram.com/monomousumi"
+                  href="https://in.linkedin.com/company/monomousumi"
+                  rel="noopener noreferrer"
+                >
+                  <i className="footer__social-media fab fa-linkedin"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/monomousumi_writer"
                   rel="noopener noreferrer"
                 >
                   <i className="footer__social-media fab fa-instagram"></i>
                 </a>
                 <a
                   target="_blank"
-                  href="
-                                https://twitter.com/monomousumi_mk"
+                  href="https://twitter.com/monomousumi_mk"
                   rel="noopener noreferrer"
                 >
                   <i className="footer__social-media fab fa-pinterest"></i>
                 </a>
                 <a
                   target="_blank"
-                  href="
-                                https://www.youtube.com/channel/UCBztOuTpBK2ONIBLlNo0Nkw"
+                  href="https://www.youtube.com/channel/UCBztOuTpBK2ONIBLlNo0Nkw"
                   rel="noopener noreferrer"
                 >
                   <i className="footer__social-media fab fa-youtube"></i>

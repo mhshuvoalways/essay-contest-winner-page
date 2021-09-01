@@ -42,12 +42,15 @@ const About = ({ goTo }) => {
           a particular topic.
         </p>
       </div>
-      <butoon
+      <a
+        href="https://weavermag.com/essay-contest/public/result"
+        target="_blank"
+        rel="noopener noreferrer"
         data-aos="fade-up"
         className="top-banner__button top-banner__button--about rainbow rainbow-1"
       >
         Check Result
-      </butoon>
+      </a>
     </div>
   );
 };
