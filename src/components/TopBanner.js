@@ -25,6 +25,15 @@ const TopBanner = ({ goTo }) => {
         >
           Check Result
         </a>
+        <a
+          href="https://weavermag.com/essay-contest/public"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-aos="fade-up"
+          className="top-banner__button rainbow rainbow-1 top-banner__button-result"
+        >
+          Submit Essay
+        </a>
         <button
           data-aos="fade-up"
           onClick={() => {
@@ -32,7 +41,7 @@ const TopBanner = ({ goTo }) => {
           }}
           className="top-banner__button rainbow rainbow-1"
         >
-          <img src={Download} alt="" className="tob__banner__download-img"/>
+          <img src={Download} alt="" className="tob__banner__download-img" />
           Media Kit
         </button>
       </div>
