@@ -32,7 +32,7 @@ const TopBanner = ({ goTo }) => {
           }}
           className="top-banner__button rainbow rainbow-1"
         >
-          <img src={Download} alt="" />
+          <img src={Download} alt="" className="tob__banner__download-img"/>
           Media Kit
         </button>
       </div>
