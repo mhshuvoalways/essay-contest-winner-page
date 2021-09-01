@@ -360,6 +360,7 @@ a:hover {
   background-color: #111111;
   width: 100%;
   color: var(--text-color);
+  margin-top: 100px;
 }
 .footer__social {
   padding: 40px 0;

@@ -18,7 +18,7 @@ const ImportantDates = ({ goTo }) => {
         <div className="important-date__details__contant">
           <h3>Important Dates</h3>
           <hr />
-          <p>Last date of Submission: Last date -25th of Every Month</p>
+          <p>Last date of Submission: 25th of every month</p>
           <p>Result announcement: First week of every month</p>
           <p>New topic announcement date - 25th to 30th of every month</p>
           <button

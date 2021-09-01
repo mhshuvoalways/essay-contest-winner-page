@@ -61,7 +61,7 @@ const Gallery = ({ goTo }) => {
     <div ref={galleryRef} className="section">
       <h2 className="section__title">Photo Gallery</h2>
       <p className="section__title__border"></p>
-      <p className="section__title__details">Past winner</p>
+      <p className="section__title__details">Past winners</p>
       <div className="gallery">
         <div className="row">
           <div className="magazines__details container">
