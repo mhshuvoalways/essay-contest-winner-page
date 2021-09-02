@@ -15,7 +15,7 @@ const About = ({ goTo }) => {
       <div data-aos="fade-up" className="about__details">
         <br />
         <p>
-          Mononomosuumi is a non commercial Edutech Platform, that brings
+          Mononomosumi is a non commercial Edutech Platform, that brings
           together technology to the education sector and providing requisite
           support to students, writers and school administrations of rural
           areas. Officially launched in May 2018 by a group of highly educated
