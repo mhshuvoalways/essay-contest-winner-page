@@ -1,16 +1,19 @@
-const {Schema, model} = require('mongoose');
+const { Schema, model } = require("mongoose");
 
-const photoGallerySchema = new Schema({
+const photoGallerySchema = new Schema(
+  {
     url: {
-        type: String,
-        require: true
+      type: String,
+      require: true,
     },
     public_id: {
-        type: String,
-        require: true
-    }
-}, {
-    timestamps: true
-})
+      type: String,
+      require: true,
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
 
-module.exports = model('photoGallery', photoGallerySchema)
+module.exports = model("photoGallery", photoGallerySchema);
