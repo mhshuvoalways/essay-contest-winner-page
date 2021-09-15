@@ -90,6 +90,7 @@ const ImportantDates = () => {
               <Button
                 variant="danger"
                 type="button"
+                size="sm"
                 onClick={() => deleteHandler(el._id)}
               >
                 delete

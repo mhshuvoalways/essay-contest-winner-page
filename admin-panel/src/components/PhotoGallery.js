@@ -84,6 +84,7 @@ const PhotoGallery = () => {
               <Button
                 variant="danger"
                 type="button"
+                size="sm"
                 onClick={() => deleteHandler(el.public_id)}
               >
                 delete

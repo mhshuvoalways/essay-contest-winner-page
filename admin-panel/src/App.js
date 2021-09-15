@@ -7,19 +7,19 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename={window.location.pathname || ''}>
+    <Router basename={window.location.pathname || ""}>
       <Navigation>
         <Switch>
           <Route exact path="/">
             <Dashboard />
           </Route>
-          <Route path="/importantdate">
+          <Route exact path="/importantdate">
             <ImportantDates />
           </Route>
-          <Route path="/photogallery">
+          <Route exact path="/photogallery">
             <PhotoGallery />
           </Route>
-          <Route path="/magazines">
+          <Route exact path="/magazines">
             <Magazines />
           </Route>
         </Switch>

@@ -4,11 +4,11 @@ import axios from "../utils/axios";
 
 const Magazines = () => {
   const [state, setState] = useState([]);
-  const [linkBody, setLinkBody] = useState({ link: "" });
+  const [linkBody, setLinkBody] = useState({ photoLink: "" });
   const [postImg, setpostImg] = useState({ image: null });
 
-  const changeHandler = (value) => {
-    setLinkBody({ body: value });
+  const changeHandler = (e) => {
+    setLinkBody({ photoLink: e.target.value });
   };
 
   const fileHandler = (e) => {
@@ -31,9 +31,9 @@ const Magazines = () => {
     e.preventDefault();
     const fd = new FormData();
     fd.append("image", postImg.image);
-    fd.append("link", linkBody.link);
-    axios
-      .post("/magazine/post", fd)
+    fd.append("photoLink", linkBody.photoLink);
+    
+    axios.post("/magazine/post", fd)
       .then((res) => {
         const data = [...state, res.data.response];
         setState(data);
@@ -41,7 +41,6 @@ const Magazines = () => {
       .catch((err) => {
         console.log(err);
       });
-    setLinkBody({ link: "" });
   };
 
   useEffect(() => {
@@ -67,7 +66,7 @@ const Magazines = () => {
           <Form.Control
             type="text"
             placeholder="Link"
-            value={linkBody.link}
+            value={linkBody.photoLink}
             onChange={changeHandler}
           />
         </Form.Group>
@@ -99,6 +98,7 @@ const Magazines = () => {
               <Button
                 variant="danger"
                 type="button"
+                size="sm"
                 onClick={() => deleteHandler(el.public_id)}
               >
                 delete

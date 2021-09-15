@@ -15,7 +15,7 @@ router.post("/post", fileUploader.single("image"), (req, res) => {
         .save()
         .then((response) => {
           res.status(200).json({
-            response,
+            response
           });
         })
         .catch((err) => {

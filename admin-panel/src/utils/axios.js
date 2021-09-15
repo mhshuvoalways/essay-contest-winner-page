@@ -1,7 +1,7 @@
-import Axios from 'axios';
+import Axios from "axios";
 
 const intence = Axios.create({
-    baseURL: `https://essaycontest.herokuapp.com`
-})
+  baseURL: `https://essaycontest-monomousumi.herokuapp.com`
+});
 
-export default intence
+export default intence;

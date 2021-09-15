@@ -6,12 +6,12 @@ const photoGallery = require("./controllers/photoGallery");
 const magazine = require("./controllers/magazine");
 const mongoose = require("mongoose");
 const cloudinary = require("cloudinary").v2;
-const cors = require('cors')
+const cors = require("cors");
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
-app.use(cors())
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
 cloudinary.config({
   cloud_name: process.env.cloud_name,
@@ -29,7 +29,9 @@ app.get("/", (req, res) => {
 });
 
 mongoose
-  .connect(`${process.env.MONGOURL}`)
+  .connect(`${process.env.MONGOURL}`, {
+    useNewUrlParser: true,
+  })
   .then(() => {
     app.listen(PORT, () => {
       console.log(`App listening at ${PORT}`);

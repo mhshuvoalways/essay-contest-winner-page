@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import axios from "axios";
+import axios from "../utils/axios";
 
 const ImportantDates = ({ goTo }) => {
   const [state, setState] = useState([]);

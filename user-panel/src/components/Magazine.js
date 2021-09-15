@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
-import axios from "axios";
+import axios from "../utils/axios";
 
 const Magazines = ({ goTo }) => {
   const [state, setState] = useState([]);
