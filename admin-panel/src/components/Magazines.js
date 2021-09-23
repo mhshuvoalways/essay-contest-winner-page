@@ -18,7 +18,7 @@ const Magazines = () => {
   const deleteHandler = (id) => {
     axios
       .delete(`/magazine/delete/${id}`)
-      .then((res) => {
+      .then(() => {
         const data = state.filter((el) => el.public_id !== id);
         setState(data);
       })
@@ -58,6 +58,7 @@ const Magazines = () => {
   const onButtonClick = () => {
     inputEl.current.click();
   };
+console.log(state);
 
   return (
     <div className="importantdate">

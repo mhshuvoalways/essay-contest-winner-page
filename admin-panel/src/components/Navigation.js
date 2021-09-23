@@ -3,7 +3,10 @@ import { Navbar, NavLink, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
-  faHome
+  faHome,
+  faStar,
+  faImage,
+  faBook
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -50,17 +53,17 @@ class Navigation extends Component {
           </NavLink>
           <NavLink>
             <Link className="my-0 p-2 text-white" to="/importantdate">
-              <FontAwesomeIcon icon={faHome} /> Important
+              <FontAwesomeIcon icon={faStar} /> Important
             </Link>
           </NavLink>
           <NavLink>
             <Link className="my-0 p-2 text-white" to="/photogallery">
-              <FontAwesomeIcon icon={faHome} /> Gallery
+              <FontAwesomeIcon icon={faImage} /> Gallery
             </Link>
           </NavLink>
           <NavLink>
             <Link className="my-0 p-2 text-white" to="/magazines">
-              <FontAwesomeIcon icon={faHome} /> Magazines
+              <FontAwesomeIcon icon={faBook} /> Magazine
             </Link>
           </NavLink>
         </div>

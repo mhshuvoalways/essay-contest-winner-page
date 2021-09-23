@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const importantDetail = require("./controllers/importantDetail");
 const photoGallery = require("./controllers/photoGallery");
+const contact = require("./controllers/contact");
 const magazine = require("./controllers/magazine");
 const mongoose = require("mongoose");
 const cloudinary = require("cloudinary").v2;
@@ -23,6 +24,7 @@ cloudinary.config({
 app.use("/importantdate", importantDetail);
 app.use("/photoGallery", photoGallery);
 app.use("/magazine", magazine);
+app.use("/contact", contact);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
