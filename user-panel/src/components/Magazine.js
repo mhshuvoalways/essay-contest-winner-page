@@ -44,6 +44,8 @@ const Magazines = ({ goTo }) => {
     ],
   };
 
+  const reverseData = [...state].reverse()
+
   return (
     <div ref={magazineRef} className="section">
       <h2 className="section__title">Our Magazines</h2>
@@ -55,7 +57,7 @@ const Magazines = ({ goTo }) => {
         <div className="row">
           <div className="magazines__details container">
             <Slider {...settings}>
-              {state.map((photo) => (
+              {reverseData.map((photo) => (
                 <div
                   className="card award__card"
                   data-aos="fade-up"

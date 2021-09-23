@@ -32,11 +32,14 @@ const Magazines = () => {
     const fd = new FormData();
     fd.append("image", postImg.image);
     fd.append("photoLink", linkBody.photoLink);
-    
-    axios.post("/magazine/post", fd)
+
+    axios
+      .post("/magazine/post", fd)
       .then((res) => {
         const data = [...state, res.data.response];
         setState(data);
+        setLinkBody({ photoLink: "" });
+        setpostImg({ image: null });
       })
       .catch((err) => {
         console.log(err);
@@ -58,7 +61,8 @@ const Magazines = () => {
   const onButtonClick = () => {
     inputEl.current.click();
   };
-console.log(state);
+
+  const reverseData = [...state].reverse();
 
   return (
     <div className="importantdate">
@@ -93,7 +97,7 @@ console.log(state);
       </Form>
       {state.length ? (
         <ul className="item__ul">
-          {state.map((el) => (
+          {reverseData.map((el) => (
             <li className="item__li" key={el._id}>
               <img src={el.url} alt="" className="item__li-img" />
               <Button

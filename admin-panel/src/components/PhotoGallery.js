@@ -53,6 +53,8 @@ const PhotoGallery = () => {
     inputEl.current.click();
   };
 
+  const reverseData = [...state].reverse()
+
   return (
     <div className="importantdate">
       <Form onSubmit={onSubmit}>
@@ -78,7 +80,7 @@ const PhotoGallery = () => {
       </Form>
       {state.length ? (
         <ul className="item__ul">
-          {state.map((el) => (
+          {reverseData.map((el) => (
             <li className="item__li" key={el._id}>
               <img src={el.url} alt="" className="item__li-img" />
               <Button

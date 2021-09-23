@@ -405,6 +405,13 @@ a:hover {
 }
 /* FAQs end */
 
+/* Subscribe start */
+.container-subscribe{
+  width: 500px;
+  margin: auto;
+}
+/* Subscribe end */
+
 /* Footer start */
 .footer {
   background-color: #111111;

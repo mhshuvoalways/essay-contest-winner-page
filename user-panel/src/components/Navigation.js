@@ -100,6 +100,14 @@ const Navigation = ({ refHandler }) => {
                 Guideline
               </p>
             </li>
+            <li className="nav-item" onClick={() => refHandler("contact")}>
+              <p
+                className="nav-link active nav__item-color"
+                aria-current="page"
+              >
+                Subscribe
+              </p>
+            </li>
             <li className="nav-item" onClick={() => refHandler("faqs")}>
               <p
                 className="nav-link active nav__item-color"

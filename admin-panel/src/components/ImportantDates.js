@@ -56,6 +56,8 @@ const ImportantDates = () => {
       });
   }, []);
 
+  const reverseData = [...state].reverse()
+
   return (
     <div className="importantdate">
       <Form onSubmit={onSubmit}>
@@ -83,7 +85,7 @@ const ImportantDates = () => {
       </Form>
       {state.length ? (
         <ul className="item__ul">
-          {state.map((el) => (
+          {reverseData.map((el) => (
             <li className="item__li" key={el._id}>
               <p>{el.themeTitle}</p>
               <p>{el.themeSubTitle}</p>

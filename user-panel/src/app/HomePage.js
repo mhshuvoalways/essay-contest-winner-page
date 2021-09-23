@@ -10,6 +10,7 @@ import ImportantDates from "../components/ImportantDates";
 import Magazine from "../components/Magazine";
 import Navigation from "../components/Navigation";
 import RulesRegulation from "../components/Rules&Regulation";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Banner from "../components/TopBanner";
 
@@ -25,6 +26,7 @@ const HomePage = () => {
     magazines: false,
     guideline: false,
     faqs: false,
+    contact: false,
   });
 
   const refHandler = (value) => {
@@ -39,6 +41,7 @@ const HomePage = () => {
         gallery: false,
         magazines: false,
         faqs: false,
+        contact: false,
       });
     } else if (value === "about") {
       setState({
@@ -51,6 +54,7 @@ const HomePage = () => {
         gallery: false,
         magazines: false,
         faqs: false,
+        contact: false,
       });
     } else if (value === "award") {
       setState({
@@ -63,6 +67,7 @@ const HomePage = () => {
         gallery: false,
         magazines: false,
         faqs: false,
+        contact: false,
       });
     } else if (value === "category") {
       setState({
@@ -75,6 +80,7 @@ const HomePage = () => {
         gallery: false,
         magazines: false,
         faqs: false,
+        contact: false,
       });
     } else if (value === "essay") {
       setState({
@@ -87,6 +93,7 @@ const HomePage = () => {
         gallery: false,
         magazines: false,
         faqs: false,
+        contact: false,
       });
     } else if (value === "prize") {
       setState({
@@ -98,6 +105,7 @@ const HomePage = () => {
         prize: true,
         gallery: false,
         magazines: false,
+        contact: false,
         faqs: false,
       });
     } else if (value === "gallery") {
@@ -110,6 +118,7 @@ const HomePage = () => {
         prize: false,
         gallery: true,
         magazines: false,
+        contact: false,
         faqs: false,
       });
     } else if (value === "magazines") {
@@ -122,6 +131,7 @@ const HomePage = () => {
         prize: false,
         gallery: false,
         magazines: true,
+        contact: false,
         faqs: false,
       });
     } else if (value === "guideline") {
@@ -135,6 +145,7 @@ const HomePage = () => {
         gallery: false,
         magazines: false,
         guideline: true,
+        contact: false,
         faqs: false,
       });
     } else if (value === "faqs") {
@@ -148,7 +159,22 @@ const HomePage = () => {
         gallery: false,
         magazines: false,
         guideline: false,
+        contact: false,
         faqs: true,
+      });
+    } else if (value === "contact") {
+      setState({
+        home: false,
+        about: false,
+        award: false,
+        category: false,
+        essay: false,
+        prize: false,
+        gallery: false,
+        magazines: false,
+        guideline: false,
+        contact: true,
+        faqs: false,
       });
     }
   };
@@ -166,6 +192,7 @@ const HomePage = () => {
       <Magazine goTo={state.magazines} />
       <Guideline goTo={state.guideline} />
       <FAQs goTo={state.faqs} />
+      <Contact goTo={state.contact}/>
       <RulesRegulation />
       <Footer />
     </div>
