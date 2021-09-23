@@ -66,6 +66,11 @@ class Navigation extends Component {
               <FontAwesomeIcon icon={faBook} /> Magazine
             </Link>
           </NavLink>
+          <NavLink>
+            <Link className="my-0 p-2 text-white" to="/contact">
+              <FontAwesomeIcon icon={faBook} /> Contact
+            </Link>
+          </NavLink>
         </div>
         <div
           onClick={this.showHideSideNav}

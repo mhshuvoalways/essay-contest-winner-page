@@ -24,13 +24,11 @@ const Contact = ({ goTo }) => {
     e.preventDefault();
     axios
       .post("/contact/post", state)
-      .then((res) => {
-        console.log(res.data);
-        
-        // setState(res.data.result);
+      .then(() => {
+        alert('Thanks for subscirbe')
       })
       .catch(() => {
-        console.log("error");
+        alert('Something is wrong')
       });
   };
 

@@ -69,6 +69,7 @@ a:hover {
 
 /* Nav end */
 
+/* ============================== */
 .dashboard{
     margin-top: 100px;
 }
@@ -97,4 +98,10 @@ form {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
+}
+
+button {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
 }
