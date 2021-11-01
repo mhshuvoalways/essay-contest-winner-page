@@ -190,9 +190,9 @@ const HomePage = () => {
       <Prizes goTo={state.prize} />
       <Gallery goTo={state.gallery} />
       <Magazine goTo={state.magazines} />
+      <Contact goTo={state.contact}/>
       <Guideline goTo={state.guideline} />
       <FAQs goTo={state.faqs} />
-      <Contact goTo={state.contact}/>
       <RulesRegulation />
       <Footer />
     </div>

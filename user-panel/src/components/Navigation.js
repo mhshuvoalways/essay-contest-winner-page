@@ -92,6 +92,14 @@ const Navigation = ({ refHandler }) => {
                 Magazines
               </p>
             </li>
+            <li className="nav-item" onClick={() => refHandler("contact")}>
+              <p
+                className="nav-link active nav__item-color"
+                aria-current="page"
+              >
+                Subscribe
+              </p>
+            </li>
             <li className="nav-item" onClick={() => refHandler("guideline")}>
               <p
                 className="nav-link active nav__item-color"
@@ -106,14 +114,6 @@ const Navigation = ({ refHandler }) => {
                 aria-current="page"
               >
                 FAQs
-              </p>
-            </li>
-            <li className="nav-item" onClick={() => refHandler("contact")}>
-              <p
-                className="nav-link active nav__item-color"
-                aria-current="page"
-              >
-                Subscribe
               </p>
             </li>
             <li className="nav-item">

@@ -34,12 +34,12 @@ const Contact = ({ goTo }) => {
 
   return (
     <div ref={contact} className="section container col-md-6 offset-md-3">
-      <h2 className="section__title">Subscribe Us</h2>
+      <h2 className="section__title">Subscribe for Free Digital Magazines</h2>
       <p className="section__title__border"></p>
       <p className="section__title__details">
         Subscribe us so that we can give you update in your email
       </p>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} data-aos="fade-up">
         <div className="form-group">
           <label>Name</label>
           <input
