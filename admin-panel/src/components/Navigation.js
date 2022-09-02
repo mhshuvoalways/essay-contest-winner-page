@@ -46,28 +46,28 @@ class Navigation extends Component {
           </Navbar.Brand>
         </Navbar>
         <div className={this.state.sideNavClass}>
-          <NavLink>
-            <Link className="my-0 p-2 text-white" to="/">
+          <NavLink className="p-2">
+            <Link className="text-white" to="/">
               <FontAwesomeIcon icon={faHome} /> Dashboard
             </Link>
           </NavLink>
-          <NavLink>
-            <Link className="my-0 p-2 text-white" to="/importantdate">
+          <NavLink className="p-2">
+            <Link className="text-white" to="/importantdate">
               <FontAwesomeIcon icon={faStar} /> Important
             </Link>
           </NavLink>
-          <NavLink>
-            <Link className="my-0 p-2 text-white" to="/photogallery">
+          <NavLink className="p-2">
+            <Link className="text-white" to="/photogallery">
               <FontAwesomeIcon icon={faImage} /> Gallery
             </Link>
           </NavLink>
-          <NavLink>
-            <Link className="my-0 p-2 text-white" to="/magazines">
+          <NavLink className="p-2">
+            <Link className="text-white" to="/magazines">
               <FontAwesomeIcon icon={faBook} /> Magazine
             </Link>
           </NavLink>
-          <NavLink>
-            <Link className="my-0 p-2 text-white" to="/contact">
+          <NavLink className="p-2">
+            <Link className="text-white" to="/contact">
               <FontAwesomeIcon icon={faBook} /> Contact
             </Link>
           </NavLink>

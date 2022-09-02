@@ -25,10 +25,10 @@ const ImportantDates = ({ goTo }) => {
       <h2 className="section__title">Topic of The Month</h2>
       <p className="section__title__border"></p>
       <h3 className="section__title__details section__title-h">
-        {state.themeTitle}
+        {state && state.themeTitle}
       </h3>
       <p className="section__title__details section__title-p">
-        {state.themeSubTitle}
+        {state && state.themeSubTitle}
       </p>
       <div className="important-date__details" data-aos="fade-up">
         <div className="important-date__details__contant">

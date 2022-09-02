@@ -5,7 +5,9 @@ const cloudinary = require("cloudinary").v2;
 
 router.post("/post", fileUploader.single("image"), (req, res) => {
   cloudinary.uploader
-    .upload(req.file.path)
+    .upload(req.file.path, {
+      public_id: "essayContest/photoGallery" + req.file.filename,
+    })
     .then((result) => {
       console.log(result);
 

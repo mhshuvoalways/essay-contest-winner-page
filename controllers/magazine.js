@@ -5,7 +5,9 @@ const cloudinary = require("cloudinary").v2;
 
 router.post("/post", fileUploader.single("image"), (req, res) => {
   cloudinary.uploader
-    .upload(req.file.path)
+    .upload(req.file.path, {
+      public_id: "essayContest/magazine/" + req.file.filename,
+    })
     .then((result) => {
       new Magazine({
         public_id: result.public_id,
@@ -15,7 +17,7 @@ router.post("/post", fileUploader.single("image"), (req, res) => {
         .save()
         .then((response) => {
           res.status(200).json({
-            response
+            response,
           });
         })
         .catch((err) => {

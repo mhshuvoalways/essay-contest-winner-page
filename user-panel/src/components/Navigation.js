@@ -116,7 +116,7 @@ const Navigation = ({ refHandler }) => {
                 FAQs
               </p>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <p
                 className="nav-link active nav__item-color"
                 aria-current="page"
@@ -130,7 +130,7 @@ const Navigation = ({ refHandler }) => {
                   <span>BLOG </span>
                 </a>
               </p>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
