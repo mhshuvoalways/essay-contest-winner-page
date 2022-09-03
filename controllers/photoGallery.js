@@ -6,11 +6,9 @@ const cloudinary = require("cloudinary").v2;
 router.post("/post", fileUploader.single("image"), (req, res) => {
   cloudinary.uploader
     .upload(req.file.path, {
-      public_id: "essayContest/photoGallery" + req.file.filename,
+      public_id: "essayContest/photoGallery/" + req.file.filename,
     })
     .then((result) => {
-      console.log(result);
-
       new PhotoGallery({
         public_id: result.public_id,
         url: result.url,
@@ -21,12 +19,16 @@ router.post("/post", fileUploader.single("image"), (req, res) => {
             response,
           });
         })
-        .catch(() => {
-          console.log("something is wrong");
+        .catch((err) => {
+          res.status(400).json({
+            err,
+          });
         });
     })
-    .catch(() => {
-      console.log("something is wrong");
+    .catch((err) => {
+      res.status(400).json({
+        err,
+      });
     });
 });
 
@@ -37,29 +39,34 @@ router.get("/get", (req, res) => {
         result,
       });
     })
-    .catch(() => {
-      console.log("something is wrong");
+    .catch((err) => {
+      res.status(400).json({
+        err,
+      });
     });
 });
 
 router.delete("/delete/:id", (req, res) => {
   const { id } = req.params;
-  cloudinary.uploader
-    .destroy(id)
+  PhotoGallery.findOneAndRemove({ _id: id })
     .then((response) => {
-      console.log(response);
-      PhotoGallery.findOneAndRemove({ public_id: id })
+      cloudinary.uploader
+        .destroy(response.public_id)
         .then((response) => {
           res.status(200).json({
             response,
           });
         })
-        .catch(() => {
-          console.log("something is wrong");
+        .catch((err) => {
+          res.status(400).json({
+            err,
+          });
         });
     })
-    .catch(() => {
-      console.log("something is wrong");
+    .catch((err) => {
+      res.status(400).json({
+        err,
+      });
     });
 });
 

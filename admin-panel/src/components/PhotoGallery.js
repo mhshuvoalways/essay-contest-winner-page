@@ -14,7 +14,7 @@ const PhotoGallery = () => {
     axios
       .delete(`/photoGallery/delete/${id}`)
       .then((res) => {
-        const data = state.filter((el) => el.public_id !== id);
+        const data = state.filter((el) => el._id !== id);
         setState(data);
       })
       .catch((err) => {
@@ -87,7 +87,7 @@ const PhotoGallery = () => {
                 variant="danger"
                 type="button"
                 size="sm"
-                onClick={() => deleteHandler(el.public_id)}
+                onClick={() => deleteHandler(el._id)}
               >
                 delete
               </Button>

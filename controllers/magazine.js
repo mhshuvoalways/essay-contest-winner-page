@@ -49,10 +49,10 @@ router.get("/get", (req, res) => {
 
 router.delete("/delete/:id", (req, res) => {
   const { id } = req.params;
-  cloudinary.uploader
-    .destroy(id)
-    .then(() => {
-      Magazine.findOneAndRemove({ public_id: id })
+  Magazine.findOneAndRemove({ _id: id })
+    .then((response) => {
+      cloudinary.uploader
+        .destroy(response.public_id)
         .then((response) => {
           res.status(200).json({
             response,

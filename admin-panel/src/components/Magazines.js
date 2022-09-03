@@ -19,7 +19,7 @@ const Magazines = () => {
     axios
       .delete(`/magazine/delete/${id}`)
       .then(() => {
-        const data = state.filter((el) => el.public_id !== id);
+        const data = state.filter((el) => el._id !== id);
         setState(data);
       })
       .catch((err) => {
@@ -104,7 +104,7 @@ const Magazines = () => {
                 variant="danger"
                 type="button"
                 size="sm"
-                onClick={() => deleteHandler(el.public_id)}
+                onClick={() => deleteHandler(el._id)}
               >
                 delete
               </Button>
