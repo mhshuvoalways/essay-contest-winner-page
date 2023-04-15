@@ -1,32 +1,13 @@
-# Essay-Contest-Website
+# Essay contest page of the Students
 
-This template was created for a client. It lives at https://essaycontest.netlify.app
+This page is for the students of the essay contest who win the contest. <br/>
+It lives at https://essaycontest.netlify.app
 
 ```bash
 Technology:
-• HTML
+• Reactjs
 • CSS
 • BEM
-• Reactjs
 • Netlify
-```
-
-## Get started
-
-_Note that you will need to have [Node.js](https://nodejs.org) installed._
-
-Install the dependencies...
-
-```bash
-npm install
-```
-
-For running localhost just hit...
-
-```bash
-npm start
-```
-
-```bash
-It will run on http://localhost:3000
+• Render.com
 ```

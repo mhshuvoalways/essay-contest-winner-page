@@ -1,7 +1,7 @@
 import Axios from 'axios';
 
 const intence = Axios.create({
-    baseURL: `https://essaycontest.herokuapp.com`
+    baseURL: `https://essay-contest-winner-page.onrender.com`
 })
 
 export default intence
